@@ -20,7 +20,7 @@ The boat guides have varying computer skills. They mainly want to see the status
 - Redux Toolkit
 - Components & styling with Material-UI and Emotion
 - Drag & Drop using react-beautiful-dnd
-- Bootstrapped with KnBoard
+- Bootstrapped with KnBoard & CRACO
 - Unit tests with React Testing Library
 - Integration tests with Cypress
 
