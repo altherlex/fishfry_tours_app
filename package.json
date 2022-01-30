@@ -96,14 +96,11 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "http://localhost:8000",
+  "proxy": "${API_URL}",
   "nyc": {
     "report-dir": "cypress-coverage",
     "exclude": [
       "cypress"
     ]
   },
-  "engines": {
-    "node": "14.18.3"
-  }  
 }
