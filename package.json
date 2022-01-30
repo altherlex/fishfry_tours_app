@@ -72,6 +72,7 @@
   "scripts": {
     "start": "craco start",
     "start:ci": "craco -r @cypress/instrument-cra start",
+    "comp": "craco build",
     "test": "craco test",
     "test:ci": "craco test --ci --coverage --reporters=default --reporters=jest-junit --coverageDirectory=jest-coverage",
     "test:coverage": "yarn test --coverage --watchAll=false --coverageDirectory=jest-coverage",
