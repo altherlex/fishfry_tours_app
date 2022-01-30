@@ -6,6 +6,9 @@
   "proxies": {
     "/api/": {
       "origin": "http://fishfrytoursapi.herokuapp.com/api/"
+    },
+    "/auth/": {
+      "origin": "http://fishfrytoursapi.herokuapp.com/auth/"
     }
   }  
 }
