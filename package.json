@@ -97,7 +97,7 @@
     ]
   },
   "pproxy": "http://localhost:8000",
-  "proxy": "${API_URL}",
+  "proxy": "fishfrytoursapi.herokuapp.com",
   "nyc": {
     "report-dir": "cypress-coverage",
     "exclude": [
