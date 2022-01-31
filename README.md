@@ -1,5 +1,6 @@
 <h1 align="center">FishFry Tours Board</h1>
 
+[![CircleCI](https://circleci.com/gh/altherlex/fishfry_tours_app/tree/master.svg?style=svg)](https://circleci.com/gh/altherlex/fishfry_tours_app/tree/master)
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://fishfryapp.herokuapp.com/)
 
 Demo: https://fishfryapp.herokuapp.com/
@@ -39,6 +40,7 @@ The boat guides have varying computer skills. They mainly want to see the status
 
 - Build Circle CI - frontend/banckend
 - Make static Dango files public in Heroku
+- User Git Worflow
 
 
 ## Commands
