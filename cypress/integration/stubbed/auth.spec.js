@@ -17,7 +17,6 @@ context("Stubbed Auth User Not Logged In", () => {
   beforeEach(() => {
     cy.server({ force404: true });
     cy.visit("/");
-    cy.title().should("eq", "Knboard");
   });
 
   it("should not register if no email entered", () => {

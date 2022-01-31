@@ -106,6 +106,9 @@ export const slice = createSlice({
       state.byColumn = byColumn;
       state.byId = byId;
     });
+    builder.addCase(patchTask.fulfilled, (state, action) => {
+      state.byId[action.payload.id] = action.payload;
+    });
     builder.addCase(createTask.pending, (state) => {
       state.createLoading = true;
     });

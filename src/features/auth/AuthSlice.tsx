@@ -1,10 +1,5 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
-import api, {
-  API_LOGIN,
-  API_LOGOUT,
-  API_REGISTER,
-  API_GUEST_REGISTER,
-} from "api";
+import api, { API_LOGIN, API_LOGOUT, API_REGISTER } from "api";
 import { User } from "types";
 import { createErrorToast, createInfoToast } from "features/toast/ToastSlice";
 import { AxiosError } from "axios";

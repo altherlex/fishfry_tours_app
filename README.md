@@ -1,9 +1,10 @@
 <h1 align="center">FishFry Tours Board</h1>
 
 [![CircleCI](https://circleci.com/gh/altherlex/fishfry_tours_app/tree/master.svg?style=svg)](https://circleci.com/gh/altherlex/fishfry_tours_app/tree/master)
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://fishfryapp.herokuapp.com/)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://fishfryapp.herokuapp.com/api/)
 
-Demo: https://fishfryapp.herokuapp.com/
+Demo: [fishfryapp Admin](https://fishfryapp.herokuapp.com/backdoor/)
+API code: [github.com/altherlex/fishfry_tours_api](https://github.com/altherlex/fishfry_tours_api)
 
 This is a simple Web application that tracks and manages boats.
 
@@ -16,6 +17,39 @@ The Boat Guides have expressed interest in having the control chart accessible o
 One of the boat guides is a web developer during the off season and offered to build the app. He insists on building it using an Agile Approach. 
  
 The boat guides have varying computer skills. They mainly want to see the status of all the guide boats in the area at a glance and be able to move their cards into different swimlanes as needed.
+
+## Assessment Scoring
+
+### Back-end component assessment
+- [x] Loads without errors
+- [x] has multiple modules/components/classes
+- [x] implement error handling
+- [x] RESTful
+- [x] Good formatting and comments
+- [x] Can list, view, create, update, delete items
+
+### Front-end component assessment
+- [x] Loads without errors
+- [x] has multiple modules/components/class
+- [x] implements data binding
+- [x] Mobile friendly
+- [x] Good formatting and comments
+- [x] Can list, view, create, update, delete items
+
+### QA test assessment
+- [x] Executable test plans & scripts that will ensure applications meet business requirements, system goals, and fulfill end-user requirement.
+- [x] Sufficient amount (>5 valuable unit tests) of test coverage (TDD) using a modern testing framework.
+- [x] Written paragraph on what approach you would take for writing functional tests for this application:
+  - [x] Functional tests are written and executed with [Cypress](https://www.cypress.io/) (End to end tests)
+
+### DevOps Pipeline Assessment
+- [x] The pipeline checks out code from a public repository
+- [x] The pipeline checks builds code (if applicable)
+- [x] The pipeline sets configuration settings
+- [x] The pipeline deploys the app to a cloud-hosted environment
+
+
+## Technical Info
 
 ### Open Source Tools
 
@@ -36,14 +70,22 @@ The boat guides have varying computer skills. They mainly want to see the status
 - prettier
 - craco
 
-## Next Steps
 
-- Build Circle CI - frontend/banckend
-- Make static Dango files public in Heroku
-- User Git Worflow
+### Next Steps
+
+- <strike>Build Circle CI - frontend/banckend</strike>
+- Integrate CircleCi tests + linter on Heroku pipeline
+- <strike>Make static Dango files public in Heroku</strike>
+- Use Git Worflow
+- Add linter to the pipeline
+- <strike>Remove column dragdrop</strike>
+- <strike>Fix updating</strike>
+- <strike>Fix Linter</strike>
+- <strike>Fix avatar feature</strike>
+- <strike>Fix updating task label</strike>
 
 
-## Commands
+### Commands
 
 ```shell
 npm start
@@ -64,7 +106,7 @@ npm cypress open
 black --exclude .venv .
 ```
 
-## Test:Covare
+### Test:Covare
 
 ```shell
 -------------------------|----------|----------|----------|----------|-------------------|
