@@ -6,7 +6,7 @@ context("Profile", () => {
     cy.route("GET", "/api/users/1/", "fixture:testuser.json");
     cy.route("/api/avatars/", "fixture:avatars.json");
     cy.visit("/profile/");
-    cy.title().should("eq", "Profile | Knboard");
+    cy.title().should("eq", "Profile");
   });
 
   it("should change username", () => {

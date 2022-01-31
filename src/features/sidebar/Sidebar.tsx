@@ -111,7 +111,7 @@ const DrawerContent = () => {
       <BottomBlock>
         <Tooltip title="View GitHub Repo">
           <GithubLink
-            href="https://github.com/altherlex"
+            href="https://github.com/altherlex/fishfry_tours_app"
             target="_blank"
             rel="noopener"
           >

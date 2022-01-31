@@ -88,7 +88,7 @@ const Footer = () => {
           It is an <b>open-source</b> project built using Django & React,
           available on{" "}
           <Link
-            href="https://github.com/altherlex/"
+            href="https://github.com/altherlex/fishfry_tours_app"
             target="_blank"
             rel="noopener"
           >

@@ -1,5 +1,8 @@
 <h1 align="center">FishFry Tours Board</h1>
 
+Demo: https://fishfryapp.herokuapp.com/
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://fishfryapp.herokuapp.com/)
+
 This is a simple Web application that tracks and manages boats.
 
 Fishfry Tours is a small salmon guiding outfit based out of Cascadia, British Columbia - along the coast. They run a seasonal guided sport fishing tour of some of the more hidden inlets of Coastal British Columbia. In total they have 8 sport fishing boats with 12 guides.  At any given time there are at least 4 or 5 boats out in the waters. Sometimes the boats will meet each other to exchange gear and fuel for longer days at sea. 
@@ -12,7 +15,7 @@ One of the boat guides is a web developer during the off season and offered to b
  
 The boat guides have varying computer skills. They mainly want to see the status of all the guide boats in the area at a glance and be able to move their cards into different swimlanes as needed.
 
-### Open Source Used
+### Open Source Tools
 
 - [Node.js](https://nodejs.org) v12 or greater
 - Typescript
@@ -20,9 +23,16 @@ The boat guides have varying computer skills. They mainly want to see the status
 - Redux Toolkit
 - Components & styling with Material-UI and Emotion
 - Drag & Drop using react-beautiful-dnd
-- Bootstrapped with KnBoard & CRACO
+- Bootstrapped with KnBoard & cra-template-typekit
 - Unit tests with React Testing Library
 - Integration tests with Cypress
+- typescript
+- redux
+- react
+- axios
+- eslint
+- prettier
+- craco
 
 
 ## Commands

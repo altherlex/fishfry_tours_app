@@ -39,6 +39,14 @@ interface PatchFields {
   assignees: Id[];
 }
 
+export const patchTask = createAsyncThunk<
+  ITask,
+  { id: Id; fields: Partial<PatchFields> }
+>("task/patchTaskStatus", async ({ id, fields }) => {
+  const response = await api.patch(`${API_TASKS}${id}/`, fields);
+  return response.data;
+});
+
 interface CreateTaskResponse extends ITask {
   column: Id;
 }

@@ -9,6 +9,7 @@ import {
   Droppable,
 } from "react-beautiful-dnd";
 import Task from "./Task";
+import AddTask from "./AddTask";
 import { css } from "@emotion/core";
 
 export const getBackgroundColor = (
@@ -75,10 +76,17 @@ const InnerTaskList = ({ tasks }: TaskListProps) => (
 
 interface InnerListProps {
   dropProvided: DroppableProvided;
+  columnId: number;
   tasks: ITask[];
+  index: number;
 }
 
-const InnerList = ({ tasks, dropProvided }: InnerListProps) => (
+const InnerList = ({
+  columnId,
+  tasks,
+  dropProvided,
+  index,
+}: InnerListProps) => (
   <Container>
     <DropZone
       data-testid="drop-zone"
@@ -91,10 +99,11 @@ const InnerList = ({ tasks, dropProvided }: InnerListProps) => (
       <InnerTaskList tasks={tasks} />
       {dropProvided.placeholder}
     </DropZone>
+    <AddTask columnId={columnId} index={index} />
   </Container>
 );
 
-const TaskList = ({ columnId, listType, tasks: tasks }: Props) => (
+const TaskList = ({ columnId, listType, tasks: tasks, index }: Props) => (
   <Droppable droppableId={columnId.toString()} type={listType}>
     {(
       dropProvided: DroppableProvided,
@@ -105,7 +114,12 @@ const TaskList = ({ columnId, listType, tasks: tasks }: Props) => (
         isDraggingFrom={Boolean(dropSnapshot.draggingFromThisWith)}
         {...dropProvided.droppableProps}
       >
-        <InnerList tasks={tasks} dropProvided={dropProvided} />
+        <InnerList
+          columnId={columnId}
+          tasks={tasks}
+          dropProvided={dropProvided}
+          index={index}
+        />
       </Wrapper>
     )}
   </Droppable>

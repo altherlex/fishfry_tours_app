@@ -2,6 +2,7 @@ import React from "react";
 import { Switch, Route, RouteProps } from "react-router-dom";
 import styled from "@emotion/styled";
 
+import EditTaskDialog from "features/task/EditTaskDialog";
 import Board from "features/board";
 import Navbar from "components/Navbar";
 import Home from "features/home/Home";
@@ -10,6 +11,7 @@ import Sidebar from "features/sidebar/Sidebar";
 import PageError from "components/PageError";
 import { sidebarWidth } from "const";
 import { useTheme, WithTheme } from "@material-ui/core";
+import CreateTaskDialog from "features/task/CreateTaskDialog";
 
 const Main = styled.div<WithTheme>`
   ${(props) => props.theme.breakpoints.up("sm")} {
@@ -44,6 +46,8 @@ const AuthenticatedApp = () => {
         <Profile />
       </AppRoute>
       <AppRoute exact path="/b/:id">
+        <EditTaskDialog />
+        <CreateTaskDialog />
         <Board />
       </AppRoute>
 

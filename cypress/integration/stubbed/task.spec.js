@@ -8,7 +8,7 @@ context("Task", () => {
     cy.route("GET", "/api/boards/1/", "fixture:internals_board.json");
     cy.route("GET", `/api/comments/**`, []);
     cy.visit("/b/1/");
-    cy.title().should("eq", "Internals | Knboard");
+    cy.title().should("eq", "Internals");
   });
 
   const createTaskResponse = {

@@ -4,7 +4,7 @@ context("Stubbed Auth", () => {
   beforeEach(() => {
     cy.stubbedSetup();
     cy.visit("/boards/");
-    cy.title().should("eq", "Boards | Knboard");
+    cy.title().should("eq", "Boards");
   });
 
   it("should show login view after clicking logout via user menu", () => {
