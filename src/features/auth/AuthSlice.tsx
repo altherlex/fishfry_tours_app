@@ -63,20 +63,6 @@ export const register = createAsyncThunk<
   }
 });
 
-export const guestRegister = createAsyncThunk<User>(
-  "auth/guestRegisterStatus",
-  async (_, { dispatch }) => {
-    try {
-      const response = await api.post(API_GUEST_REGISTER);
-      return response.data;
-    } catch (e) {
-      dispatch(
-        createErrorToast("Failed to enter as a guest, try again later.")
-      );
-    }
-  }
-);
-
 interface LoginProps {
   username: string;
   password: string;
@@ -154,9 +140,6 @@ export const slice = createSlice({
     });
     builder.addCase(register.rejected, (state, action) => {
       state.registerErrors = action.payload;
-    });
-    builder.addCase(guestRegister.fulfilled, (state, action) => {
-      state.user = action.payload;
     });
     builder.addCase(updateAvatarFulfilled, (state, action) => {
       if (state.user) {

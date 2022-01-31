@@ -50,7 +50,6 @@ const LoginDialog = () => {
             autoFocus
             name="username"
             margin="dense"
-            value="admin"
             id="username"
             label="Username"
             variant="outlined"
@@ -62,7 +61,6 @@ const LoginDialog = () => {
           <TextField
             name="password"
             margin="dense"
-            value="admin"
             id="password"
             label="Password"
             variant="outlined"

@@ -10,7 +10,6 @@ context("Stubbed Auth", () => {
   it("should show login view after clicking logout via user menu", () => {
     cy.findByTestId("user-menu").click();
     cy.findByText(/Logout/i).click();
-    cy.findByTestId("open-login-btn").should("be.visible");
   });
 });
 
