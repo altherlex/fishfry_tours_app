@@ -4,8 +4,10 @@
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://fishfryapp.herokuapp.com/api/)
 
 Demo: [fishfryapp Admin](https://fishfryapp.herokuapp.com/backdoor/)
+
 API code: [github.com/altherlex/fishfry_tours_api](https://github.com/altherlex/fishfry_tours_api)
 
+--
 This is a simple Web application that tracks and manages boats.
 
 Fishfry Tours is a small salmon guiding outfit based out of Cascadia, British Columbia - along the coast. They run a seasonal guided sport fishing tour of some of the more hidden inlets of Coastal British Columbia. In total they have 8 sport fishing boats with 12 guides.  At any given time there are at least 4 or 5 boats out in the waters. Sometimes the boats will meet each other to exchange gear and fuel for longer days at sea. 
