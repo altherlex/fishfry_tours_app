@@ -7,35 +7,18 @@ import {
   useTheme,
   useMediaQuery,
 } from "@material-ui/core";
-import { Autocomplete } from "@material-ui/lab";
 import { RootState } from "store";
 import { useSelector, useDispatch } from "react-redux";
 import styled from "@emotion/styled";
 import { css } from "@emotion/core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faRocket } from "@fortawesome/free-solid-svg-icons";
-import MarkdownIt from "markdown-it";
-import MdEditor from "react-markdown-editor-lite";
 
 import { setCreateDialogOpen, createTask } from "./TaskSlice";
 import { PRIMARY } from "utils/colors";
-import {
-  PRIORITY_OPTIONS,
-  PRIORITY_2,
-  MD_EDITOR_PLUGINS,
-  MD_EDITOR_CONFIG,
-  Key,
-} from "const";
-import { selectAllMembers } from "features/member/MemberSlice";
+import { PRIORITY_2, Key } from "const";
 import { Priority, BoardMember, Label } from "types";
-import { createMdEditorStyles } from "styles";
-import AvatarTag from "components/AvatarTag";
-import AvatarOption from "components/AvatarOption";
-import { selectAllLabels } from "features/label/LabelSlice";
 import getMetaKey from "utils/shortcuts";
-import LabelChip from "components/LabelChip";
-
-const mdParser = new MarkdownIt();
 
 const DialogTitle = styled.h3`
   color: ${PRIMARY};
@@ -48,14 +31,6 @@ const Content = styled.div`
   padding: 2rem;
 `;
 
-const EditorWrapper = styled.div`
-  margin: 1rem 0;
-  ${createMdEditorStyles(false)}
-  .rc-md-editor {
-    min-height: 160px;
-  }
-`;
-
 const Footer = styled.div`
   display: flex;
   justify-content: flex-end;
@@ -66,8 +41,6 @@ const Footer = styled.div`
 const CreateTaskDialog = () => {
   const theme = useTheme();
   const dispatch = useDispatch();
-  const labelsOptions = useSelector(selectAllLabels);
-  const members = useSelector(selectAllMembers);
   const open = useSelector((state: RootState) => state.task.createDialogOpen);
   const columnId = useSelector(
     (state: RootState) => state.task.createDialogColumn
@@ -85,10 +58,6 @@ const CreateTaskDialog = () => {
   });
   const [labels, setLabels] = useState<Label[]>([]);
   const xsDown = useMediaQuery(theme.breakpoints.down("xs"));
-
-  const handleEditorChange = ({ text }: any) => {
-    setDescription(text);
-  };
 
   const setInitialValues = () => {
     if (columnId) {
