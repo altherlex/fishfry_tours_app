@@ -82,6 +82,9 @@ const Footer = () => {
         >
           <AlertTitle>About</AlertTitle>
           <p>
+            <i>use admin/admin to login</i>
+          </p>
+          <p>
             <b>Fishfry Board</b> is a simple Web application that tracks and
             manages boats.
           </p>
