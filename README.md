@@ -21,32 +21,32 @@ The boat guides have varying computer skills. They mainly want to see the status
 ## Assessment Scoring
 
 ### Back-end component assessment
-- [x] Loads without errors
-- [x] has multiple modules/components/classes
-- [x] implement error handling
-- [x] RESTful
-- [x] Good formatting and comments
-- [x] Can list, view, create, update, delete items
+- :heavy_check_mark: Loads without errors
+- :heavy_check_mark: has multiple modules/components/classes
+- :heavy_check_mark: implement error handling
+- :heavy_check_mark: RESTful
+- :heavy_check_mark: Good formatting and comments
+- :heavy_check_mark: Can list, view, create, update, delete items
 
 ### Front-end component assessment
-- [x] Loads without errors
-- [x] has multiple modules/components/class
-- [x] implements data binding
-- [x] Mobile friendly
-- [x] Good formatting and comments
-- [x] Can list, view, create, update, delete items
+- :heavy_check_mark: Loads without errors
+- :heavy_check_mark: has multiple modules/components/class
+- :heavy_check_mark: implements data binding
+- :heavy_check_mark: Mobile friendly
+- :heavy_check_mark: Good formatting and comments
+- :heavy_check_mark: Can list, view, create, update, delete items
 
 ### QA test assessment
-- [x] Executable test plans & scripts that will ensure applications meet business requirements, system goals, and fulfill end-user requirement.
-- [x] Sufficient amount (>5 valuable unit tests) of test coverage (TDD) using a modern testing framework.
-- [x] Written paragraph on what approach you would take for writing functional tests for this application:
-  - [x] Functional tests are written and executed with [Cypress](https://www.cypress.io/) (End to end tests)
+- :heavy_check_mark: Executable test plans & scripts that will ensure applications meet business requirements, system goals, and fulfill end-user requirement.
+- :heavy_check_mark: Sufficient amount (>5 valuable unit tests) of test coverage (TDD) using a modern testing framework.
+- :heavy_check_mark: Written paragraph on what approach you would take for writing functional tests for this application:
+  - :heavy_check_mark: Functional tests are written and executed with [Cypress](https://www.cypress.io/) (End to end tests)
 
 ### DevOps Pipeline Assessment
-- [x] The pipeline checks out code from a public repository
-- [x] The pipeline checks builds code (if applicable)
-- [x] The pipeline sets configuration settings
-- [x] The pipeline deploys the app to a cloud-hosted environment
+- :heavy_check_mark: The pipeline checks out code from a public repository
+- :heavy_check_mark: The pipeline checks builds code (if applicable)
+- :heavy_check_mark: The pipeline sets configuration settings
+- :heavy_check_mark: The pipeline deploys the app to a cloud-hosted environment
 
 
 ## Technical Info
